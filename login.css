@@ -1,0 +1,187 @@
+/* Make sure we don't have margins, get rid of any scrollbars that might make things ugly */
+html, body {
+    height: 100%; width: 100%; overflow: hidden;
+}
+/* Set a header */
+h1 {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 19px;
+    line-height: 21px;
+
+}
+/* Set the paragraph style */
+p {
+}
+body {
+    /* no margins = no ugly white space */
+    margin: 0;
+    padding: 0;
+    /* Georgia/serif is font of choice (?) */
+    font-family: Georgia, serif;
+    font-size: 13px;
+    /* In case we can't find the background, set a color */
+    background: #008080;
+    /* Use wallpaper.jpg in the root directory */
+    /* Perhaps eventually move resources to folders...it is small enough for now though */
+    border: 0;
+    color: #000;
+    -webkit-user-select: none
+}
+/* Inner Div settings for vertical center */
+.inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+/* Outer div for vertical center  */
+.outer {
+    position: absolute;
+    height:100%;
+    width: 100%;
+    display: table;
+
+}
+.card {
+    /* There shouldn't be any, but better safe than sorry */
+    overflow: hidden;
+    padding: 1px;
+    background-color: #c6c6c6;
+    /* Center it, with a bottom margin */
+    margin: 0px auto 25px;
+    box-shadow: 2px 2px 0px 0px black;
+}
+
+/* CSS for terms and conditions */
+#terms {
+    color: white;
+    font-size: 18px;
+    margin-left: 50px;
+    text-align: center !important;
+
+}
+.signin-card {
+    width: 476px;
+    max-width: 90%;
+}
+
+.card input[type=text],
+.card input[type=password],
+.card select {
+    -webkit-appearance: none;
+    z-index: 1;
+    position: relative;
+    box-sizing: border-box;
+    height: 17px;
+    width: 27em;
+}
+.card form {
+    margin: 0;
+    padding: 0;
+}
+.card form .error {
+    z-index: 2;
+}
+#labels{
+	float:left;
+	width: 7em;
+}
+#formInputs{
+	float:right;
+	margin-right:10px;
+}
+.formLabel{
+	margin-bottom: 10px;
+	display: inline-block;
+}
+#user {
+    margin-bottom: 10px;
+}
+#pass {
+    margin-top: -1px;
+}
+.btn {
+    float: right;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    width: 75px;
+    height: 22px;
+    background-color: #c6c6c6;
+    box-shadow: 1px 1px 0px 0px black;
+}
+.btn:active {
+    box-shadow: 2px 2px 0px 0px black;
+}
+
+.actions-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 44px;
+    background: rgba(0,0,0,.4);
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0 1px 2px rgba(0,0,0,.4);
+    line-height: 44px;
+    font-size: 13px;
+    padding: 0 14px;
+    box-shadow: 0 -1px 0 rgba(255,255,255,.1);
+    box-sizing: border-box;
+}
+.action {
+    cursor: pointer;
+    float: left;
+    margin-right: 20px;
+    width: 30%;
+}
+.action-clock {
+    cursor: default;
+    float: right;
+    margin-right: 0;
+    text-align: right;
+    font-size: 18px;
+}
+.action i{
+    display: inline-block;
+    float: left;
+    margin-right: 5px;
+    height: 14px;
+    width: 14px;
+    margin-top: 14px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#error {
+    width: 100%;
+    margin-left: 10px;
+    text-align: left;
+    padding-bottom: 0px;
+    color: black;
+    font-weight: bold;
+}
+
+#session {
+    opacity: 0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+
+}
+
+#session:hover {
+    opacity: 1;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
