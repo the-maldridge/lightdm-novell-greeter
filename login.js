@@ -54,7 +54,7 @@ var login = (function (lightdm, $) {
 
 	//instead, we just grab the session (if there is one) and update the select box
 	var username = $user.val() || null;
-        var session = "windows95";
+        var session = lightdm_default_session;
         $('#session').val(session);
 
     }
