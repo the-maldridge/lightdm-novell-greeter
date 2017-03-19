@@ -1,72 +1,59 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="login.css" />
-    <link rel="stylesheet" type="text/css" href="tooltipster.css" />
-    <script src="jquery-2.1.4.min.js"></script>
-    <script>
-document.addEventListener("contextmenu", function(e){
-        e.preventDefault();
-}, false);
-jQuery(document).ready(function(){
-        jQuery('#advanced').on('click', function(event) {
-                jQuery('#advanced-div').toggle('show');
-        });
-});
-    </script>
-  </head>
-  <body oncontextmenu="return false">
-    <div class="outer">
-      <div class="inner">
-       <div class="card signin-card">
-               <img src="bar.png" width="100%" />
-               <img src="novell.png" width="456px" style="padding-left: 10px;"/>
-         <div id="error">
-           Invalid Username or Password
-         </div>
-         <form style="margin-left: 10px;">
-		<div id="labels">
-			<label class="formLabel" for="user">Username:</label><br/>
-			<label class="formLabel" for="pass">Password:</label>
-		</div>
-		<div id="formInputs">
-			<input id="user" tabindex="1" type="text" /><br/>
-			<input id="pass" tabindex="2" type="password" />
-		</div>
-		<div style="clear:both"></div>
-           <button type="button" tabindex="5" class="btn" id="advanced" style="margin-right:10px">
-                Advanced
-           </button>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="login.css" />
+        <link rel="stylesheet" type="text/css" href="tooltipster.css" />
+        <script src="jquery-2.1.4.min.js"></script>
+        <script>
+         /* document.addEventListener("contextmenu", function(e){
+          *     e.preventDefault();
+          * }, false);
+          */
+         jQuery(document).ready(function(){
+             jQuery('#advanced').on('click', function(event) {
+                 jQuery('#advanced-div').toggle('show');
+             });
+         });
+        </script>
+    </head>
+    <body oncontextmenu="return false">
+        <div class="outer">
+            <div class="inner">
+                <div class="card signin-card">
+                    <img src="bar.png" width="100%" />
+                    <img src="novell.png" width="456px" style="padding-left: 10px;"/>
+                    <div id="error">
+                        Invalid Username or Password
+                    </div>
+                    <form style="margin-left: 10px;">
+		        <div id="labels">
+			    <label class="formLabel" for="user">Username:</label><br/>
+			    <label class="formLabel" for="pass">Password:</label>
+		        </div>
+		        <div id="formInputs">
+			    <input id="user" tabindex="1" type="text" /><br/>
+			    <input id="pass" tabindex="2" type="password" />
+		        </div>
+		        <div style="clear:both"></div>
+                        <button type="button" tabindex="5" class="btn" id="advanced" style="margin-right:10px">
+                            Advanced
+                        </button>
 
-           <button type="reset" tabindex="4" class="btn">
-                Cancel
-           </button>
-           <button type="submit" tabindex="3" class="btn">
-                OK
-           </button><br />
-           <div id="advanced-div" style="display:none">
-                   <p style="margin-top: 20px">University of Texas at Dallas Collegium V</p>
-                   <p>Pursuant to Texas Administrative Code 202:</p>
-                   <p>(1) Unauthorized use is prohibited;</p>
-                   <p>(2) Usage may be subject to security testing and monitoring;</p>
-                   <p>(3) Misuse is subject to criminal prosecution; and</p>
-                   <p>(4) No expectation of privacy except as otherwise provided by
-                   applicable privacy laws</p>
-                   <select id="session" tabindex="5">
-           </div>
-        </select>
-         </form>
-       </div>
-
-      </div>
-    </div>
-
-
-
-
-    <script src="login.js"></script>
-
-
-  </body>
+                        <button type="reset" tabindex="4" class="btn">
+                            Cancel
+                        </button>
+                        <button type="submit" tabindex="3" class="btn">
+                            OK
+                        </button><br />
+                        <div id="advanced-div" style="display:none">
+                            <select id="session" tabindex="5">
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="login.js"></script>
+    </body>
 </html>
