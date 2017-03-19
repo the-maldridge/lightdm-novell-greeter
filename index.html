@@ -9,7 +9,7 @@
          document.addEventListener("contextmenu", function(e){
              e.preventDefault();
          }, false);
-         /
+
          jQuery(document).ready(function(){
              jQuery('#advanced').on('click', function(event) {
                  jQuery('#advanced-div').toggle('show');
@@ -26,16 +26,17 @@
                     <div id="error">
                         Invalid Username or Password
                     </div>
-                    <form style="margin-left: 10px;">
-		        <div id="labels">
-			    <label class="formLabel" for="user">Username:</label><br/>
-			    <label class="formLabel" for="pass">Password:</label>
-		        </div>
-		        <div id="formInputs">
-			    <input id="user" tabindex="1" type="text" /><br/>
-			    <input id="pass" tabindex="2" type="password" />
-		        </div>
-		        <div style="clear:both"></div>
+                    <form>
+                        <div id="formContainer">
+                            <div>
+			        <label class="formLabel" for="user">Username:</label><br />
+                                <label class="formLabel" for="pass">Password:</label>
+                            </div>
+                            <div>
+                                <input id="user" tabindex="1" type="text" />
+			        <input id="pass" tabindex="2" type="password" />
+                            </div>
+                        </div>
                         <button type="button" tabindex="5" class="btn" id="advanced" style="margin-right:10px">
                             Advanced
                         </button>
