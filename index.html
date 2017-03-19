@@ -3,13 +3,13 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="login.css" />
-        <link rel="stylesheet" type="text/css" href="tooltipster.css" />
-        <script src="jquery-2.1.4.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="vendor/css/tooltipster.css" />
+        <script src="vendor/js/jquery.min.js"></script>
         <script>
-         /* document.addEventListener("contextmenu", function(e){
-          *     e.preventDefault();
-          * }, false);
-          */
+         document.addEventListener("contextmenu", function(e){
+             e.preventDefault();
+         }, false);
+         /
          jQuery(document).ready(function(){
              jQuery('#advanced').on('click', function(event) {
                  jQuery('#advanced-div').toggle('show');
